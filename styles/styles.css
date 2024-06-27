@@ -1067,6 +1067,8 @@ iframe {
     }
     .footer ul{
         flex-wrap: nowrap;
+        padding-right: 1%;
+    gap: 11%;
     }
 
     
