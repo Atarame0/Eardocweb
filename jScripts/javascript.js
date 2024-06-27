@@ -30,20 +30,27 @@
     // });
     
 
-    document.addEventListener("DOMContentLoaded", function() {
-        var acc = document.getElementsByClassName("accordion");
-        for (var i = 0; i < acc.length; i++) {
-            acc[i].addEventListener("click", function() {
-                this.classList.toggle("active");
-                var panel = this.nextElementSibling;
+document.addEventListener("DOMContentLoaded", function() {
+    var acc = document.getElementsByClassName("accordion-button"); // Adjusted class name to match the button class
+    for (var i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var panel = this.nextElementSibling;
+            
+            // Ensure panel exists and is an element before getting its computed style
+            if (panel && panel.nodeType === Node.ELEMENT_NODE) {
                 if (window.getComputedStyle(panel).getPropertyValue('display') === "block") {
                     panel.style.display = "none";
                 } else {
                     panel.style.display = "block";
                 }
-            });
-        }
-    });
+            } else {
+                console.error("Next element is not a valid panel.");
+            }
+        });
+    }
+});
+
   
 
 function toggleNavBar() {
