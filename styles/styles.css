@@ -1403,6 +1403,11 @@ margin-top: 0%;
     text-align:right;
 }
 
+.inline-container{
+    display: flex;
+    align-items: center;
+}
+
 
 .flex-container-doc-meds{
     display: flex; /* Use flexbox */
