@@ -1406,6 +1406,7 @@ margin-top: 0%;
 .inline-container{
     display: flex;
     align-items: center;
+    background-color: #effbfe;
 }
 
 
