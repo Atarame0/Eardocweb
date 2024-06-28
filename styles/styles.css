@@ -53,7 +53,7 @@ font-family: 'Assistant-Light';
 
 .sidenav .closebtn {
     position: absolute;
-    top: 0;
+    top: -21;
 
     font-size: 36px;
     margin-left: 50px;
