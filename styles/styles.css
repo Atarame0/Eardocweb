@@ -1365,9 +1365,10 @@ margin-top: 0%;
     padding-bottom: 5%;
     display: flex;
     list-style-type: none;
-    gap: 1rem; /* Adjust gap as needed */
+    gap: 4rem; /* Adjust gap as needed */
     flex-direction: row;
     padding-left: 3%;
+    margin-right: 5%;
    
    
 }
