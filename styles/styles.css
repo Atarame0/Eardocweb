@@ -1539,6 +1539,7 @@ margin-top: 0%;
         justify-content: center; /* Center align items vertically */
         padding: 1rem;
         flex-direction: column;
+        margin-right: 0%;
     }
 
 
