@@ -1378,7 +1378,7 @@ margin-top: 0%;
     background-color: white;
     box-shadow: 0 7px 3px rgba(131, 151, 160, 0.5);
     display: inline-block;
-    width: calc(33.33% - 10px); /* Adjust width to fit three items in a row */
+    width: 42%;
     margin-right: 10px; /* Adjust margin between items */
     border-radius: 18px;
 }
