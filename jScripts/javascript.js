@@ -30,13 +30,31 @@
     // });
     
 
+    // document.addEventListener("DOMContentLoaded", function() {
+    //     var acc = document.getElementsByClassName("accordion");
+    //     for (var i = 0; i < acc.length; i++) {
+    //         acc[i].addEventListener("click", function() {
+    //             this.classList.toggle("active");
+    //             // Navigate to the panel correctly
+    //             var panel = this.parentElement.nextElementSibling;
+    //             if (panel.style.display === "block") {
+    //                 panel.style.display = "none";
+    //             } else {
+    //                 panel.style.display = "block";
+    //             }
+    //         });
+    //     }
+    // });
+
     document.addEventListener("DOMContentLoaded", function() {
         var acc = document.getElementsByClassName("accordion");
         for (var i = 0; i < acc.length; i++) {
             acc[i].addEventListener("click", function() {
+                console.log("click");
                 this.classList.toggle("active");
-                // Navigate to the panel correctly
-                var panel = this.parentElement.nextElementSibling;
+
+                // Use closest to find the .doc-med parent and then querySelector to find the .panel within it
+                var panel = this.closest('.doc-med').querySelector('.panel');
                 if (panel.style.display === "block") {
                     panel.style.display = "none";
                 } else {
