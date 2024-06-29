@@ -48,13 +48,13 @@
 
     document.addEventListener("DOMContentLoaded", function() {
         var acc = document.getElementsByClassName("accordion");
+    
         for (var i = 0; i < acc.length; i++) {
             acc[i].addEventListener("click", function() {
-                console.log("click");
                 this.classList.toggle("active");
-
-                // Use closest to find the .doc-med parent and then querySelector to find the .panel within it
-                var panel = this.closest('.doc-med').querySelector('.panel');
+    
+                var panel = this.nextElementSibling;
+                
                 if (panel.style.display === "block") {
                     panel.style.display = "none";
                 } else {
