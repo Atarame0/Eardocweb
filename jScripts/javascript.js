@@ -172,7 +172,7 @@ function showPopup(country) {
             videoUrl = 'https://www.facebook.com/plugins/video.php?href=https://www.facebook.com/Eardoc.store/videos/930844451966430/&show_text=0&width=560';
             title = 'ישראל';
             flagSrc = 'images/israel.png';
-            sentence = "It doesn't hurt"; // New sentence for Israel
+            sentence = " "זה נעים? כן.. אתה יודע להשתמש בזה לבד? כן" "; // New sentence for Israel
             break;
         case 'UK':
             videoUrl = 'https://www.youtube.com/embed/Kx0Whg-KOxg';
