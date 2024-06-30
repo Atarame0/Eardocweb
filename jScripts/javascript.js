@@ -155,57 +155,68 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
     // המלצות מהעולם  
+function showPopup(country) {
+    const popup = document.getElementById('popup');
+    const videoIframe = document.getElementById('video-iframe');
+    const popupTitle = document.getElementById('popup-title');
+    const popupFlag = document.getElementById('popup-flag');
+    const popupSentence = document.getElementById('popup-sentence'); // New element for the sentence
 
-   function showPopup(country) {
-        const popup = document.getElementById('popup');
-        const videoIframe = document.getElementById('video-iframe');
-        const popupTitle = document.getElementById('popup-title');
-        const popupFlag = document.getElementById('popup-flag');
-    
-        let videoUrl = '';
-        let title = '';
-        let flagSrc = '';
-    
-        switch (country) {
-            case 'Israel':
-                videoUrl = 'https://www.facebook.com/plugins/video.php?href=https://www.facebook.com/Eardoc.store/videos/930844451966430/&show_text=0&width=560';
-                title = 'ישראל';
-                flagSrc = 'images/israel.png';
-                break;
-            case 'UK':
-                videoUrl = 'https://www.youtube.com/embed/Kx0Whg-KOxg';
-                title = 'בריטניה';
-                flagSrc = 'images/Britain.png';
-                break;
-            case 'US':
-                videoUrl = 'https://www.youtube.com/embed/_7OPmT3yJWY';
-                title = 'אמריקה';
-                flagSrc = 'images/amerika.png';
-                break;
-            case 'ND':
-                videoUrl = 'https://www.youtube.com/embed/oyki6anJwR0';
-                title = 'צפון דיקוטה';
-                flagSrc = 'images/dikota.png';
-                break;
-            case 'Hawaii':
-                videoUrl = 'https://www.youtube.com/embed/1ZPIhMGBsaM';
-                title = 'הוואי';
-                flagSrc = 'images/hawaii.png';
-                break;
-            case 'Asia':
-                videoUrl = 'https://www.youtube.com/embed/KpFTmjh-4qg';
-                title = 'תאילנד';
-                flagSrc = 'images/Thailand.png';
-                break;
-        }
-    
-        videoIframe.src = videoUrl;
-        popupTitle.textContent = title;
-        popupFlag.src = flagSrc;
-        popupFlag.alt = `${title} flag`;
-    
-        popup.style.display = 'flex';
+    let videoUrl = '';
+    let title = '';
+    let flagSrc = '';
+    let sentence = '';
+
+    switch (country) {
+        case 'Israel':
+            videoUrl = 'https://www.facebook.com/plugins/video.php?href=https://www.facebook.com/Eardoc.store/videos/930844451966430/&show_text=0&width=560';
+            title = 'ישראל';
+            flagSrc = 'images/israel.png';
+            sentence = "It doesn't hurt"; // New sentence for Israel
+            break;
+        case 'UK':
+            videoUrl = 'https://www.youtube.com/embed/Kx0Whg-KOxg';
+            title = 'בריטניה';
+            flagSrc = 'images/Britain.png';
+            sentence = "It is recommended"; // New sentence for UK
+            break;
+        case 'US':
+            videoUrl = 'https://www.youtube.com/embed/_7OPmT3yJWY';
+            title = 'אמריקה';
+            flagSrc = 'images/amerika.png';
+            sentence = "I recommend"; // New sentence for US
+            break;
+        case 'ND':
+            videoUrl = 'https://www.youtube.com/embed/oyki6anJwR0';
+            title = 'צפון דיקוטה';
+            flagSrc = 'images/dikota.png';
+            sentence = "Buy it"; // New sentence for ND
+            break;
+        case 'Hawaii':
+            videoUrl = 'https://www.youtube.com/embed/1ZPIhMGBsaM';
+            title = 'הוואי';
+            flagSrc = 'images/hawaii.png';
+            sentence = "It's good for you"; // New sentence for Hawaii
+            break;
+        case 'Asia':
+            videoUrl = 'https://www.youtube.com/embed/KpFTmjh-4qg';
+            title = 'תאילנד';
+            flagSrc = 'images/Thailand.png';
+            sentence = "Show me wow"; // New sentence for Thailand
+            break;
     }
+
+    videoIframe.src = videoUrl;
+    popupTitle.textContent = title;
+    popupFlag.src = flagSrc;
+    popupFlag.alt = `${title} flag`;
+    
+    // Set the sentence text
+    popupSentence.textContent = sentence;
+
+    popup.style.display = 'flex';
+}
+
     
     function closePopup() {
         const popup = document.getElementById('popup');
