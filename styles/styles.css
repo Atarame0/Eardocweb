@@ -880,7 +880,7 @@ height: 63%;
 }
 
 .popup-content {
-    background-color: #EFFBFF;
+    background-color: rgba(239, 251, 255, 0.8);
     padding: 16px;
     border-radius: 30px;
     text-align: center;
