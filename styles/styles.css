@@ -2961,9 +2961,16 @@ width: 24rem;
 }
 
 .small-image {
-width: 80%; /* Adjust the percentage to the desired size */
+    width: 80%; /* Adjust the percentage to the desired size */
     max-width: 1000px; /* Optional: set a maximum width */
     height: auto; /* Maintain the aspect ratio */
     display: block; /* Make the image a block element */
     margin: 0 auto; /* Center the image */
 }
+
+@media (max-width: 600px) {
+    .small-image {
+        content: url("images/nozel-mobile.png"); /* Substitute with the mobile image */
+    }
+}
+
