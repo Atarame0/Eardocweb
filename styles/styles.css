@@ -3157,3 +3157,19 @@ width: 24rem;
 }
 
 
+.chosenCat-image-us {
+    padding-right: -1%;
+    top: 8%;
+    height: auto;
+    margin-top: -13%;
+    padding-right: 17%;
+    width: 81%;
+}
+
+@media (max-width: 600px) {
+    .chosenCat-image-us {
+     display:none;
+    }
+}
+
+
