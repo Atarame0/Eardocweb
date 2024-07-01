@@ -181,7 +181,7 @@ function showPopup(country) {
             videoUrl = 'https://www.youtube.com/embed/1ZPIhMGBsaM';
             title = 'הוואי';
             flagSrc = 'images/hawaii.png';
-            sentence = "זה לא פולשי ומטפל בבעיה"; // New sentence for Hawaii
+            sentence = "זה לא פולשני ומטפל בבעיה"; // New sentence for Hawaii
             break;
         case 'Asia':
             videoUrl = 'https://www.youtube.com/embed/KpFTmjh-4qg';
