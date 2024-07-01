@@ -2967,6 +2967,46 @@ width: 24rem;
 
 
 
+
+
+.container-ear-infographic-sw .row {
+    display: flex;
+    justify-content: space-around; /* Adjust as needed */
+}
+
+.container-ear-infographic-sw.col-sm {
+    flex: 1;
+    text-align: center; /* Optional: Center align images within columns */
+}
+
+.container-ear-infographic-sw img {
+    max-width: 99%;
+    height: 87%;
+    background-color: #bfeff5;
+    padding: 2%;
+    border-radius: 7%;
+    box-shadow: 0 6px 0px rgba(139, 165, 160, 0.3);
+}
+
+.container-ear-infographic-sw {
+    padding: 5%;
+}
+
+
+
+@media (max-width: 600px) {
+
+.container-ear-infographic-sw  img{
+      max-width: 91%;
+    height: 25%;
+}
+
+}
+
+
+
+
+
 @media (max-width: 600px) {
 
     .sw-info-p{
