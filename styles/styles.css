@@ -1336,6 +1336,39 @@ margin-top: 0%;
     text-align: right;
 }
 
+
+
+.container-ear-infographic .row {
+    display: flex;
+    justify-content: space-around; /* Adjust as needed */
+}
+
+.container-ear-infographic .col-sm {
+    flex: 1;
+    text-align: center; /* Optional: Center align images within columns */
+}
+
+.container-ear-infographic img {
+    max-width: 99%;
+    height: 87%;
+    background-color: #effbfe;
+    padding: 2%;
+    border-radius: 7%;
+    box-shadow: 0 6px 0px rgba(139, 165, 160, 0.3);
+}
+
+.container-ear-infographic{
+    padding: 5%;
+}
+
+
+
+
+
+
+
+
+
 @media (max-width: 600px) {
 .main-text{
     text-align: center;
