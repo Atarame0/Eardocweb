@@ -2219,6 +2219,7 @@ display: none;
 .inline-container-kids .main-text {
     flex: 1;
     margin: 10px;
+    text-align: right;
 }
 
 
