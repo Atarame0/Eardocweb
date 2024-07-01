@@ -514,7 +514,7 @@ padding-top: 0%;
 
 .Icon-image-Fly {
     cursor: pointer;
-    transform: translate(8%, 0) scale(1);
+   transform: translate(2%, 0) scale(1.1);
     max-width: 100%;
     height: auto;
     margin-top: 10%;
@@ -536,7 +536,7 @@ padding-top: 0%;
 
 .Icon-image-Sw {
     cursor: pointer;
-    transform: translate(0%, 0) scale(1);
+    transform: translate(-6%, 0) scale(1.1);
     max-width: 100%;
     height: auto;
     margin-top: 3%;
@@ -557,7 +557,7 @@ padding-top: 0%;
 
 .Icon-image-Ad {
     cursor: pointer;
-    transform: translate(-11%, 0) scale(1);
+        transform: translate(-14%, 0) scale(1.1);
     max-width: 100%;
     height: auto;
     margin-top: 2%;
