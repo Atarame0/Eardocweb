@@ -30,22 +30,7 @@
     // });
     
 
-    // document.addEventListener("DOMContentLoaded", function() {
-    //     var acc = document.getElementsByClassName("accordion");
-    //     for (var i = 0; i < acc.length; i++) {
-    //         acc[i].addEventListener("click", function() {
-    //             this.classList.toggle("active");
-    //             // Navigate to the panel correctly
-    //             var panel = this.parentElement.nextElementSibling;
-    //             if (panel.style.display === "block") {
-    //                 panel.style.display = "none";
-    //             } else {
-    //                 panel.style.display = "block";
-    //             }
-    //         });
-    //     }
-    // });
-
+ 
     document.addEventListener("DOMContentLoaded", function() {
         var acc = document.getElementsByClassName("accordion");
     
@@ -53,7 +38,7 @@
             acc[i].addEventListener("click", function() {
                 this.classList.toggle("active");
     
-                var panel = this.nextElementSibling;
+                var panel = this.parentElement.nextElementSibling;
                 
                 if (panel.style.display === "block") {
                     panel.style.display = "none";
