@@ -2210,6 +2210,18 @@ display: none;
 
 
 /* עמוד ילדים */
+
+.inline-container-kids {
+    display: flex;
+    justify-content: space-between;
+}
+
+.inline-container-kids .main-text {
+    flex: 1;
+    margin: 10px;
+}
+
+
 .chosenCat-image-kids{
     height: auto;
     margin-top: -10%;
