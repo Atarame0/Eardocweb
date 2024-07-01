@@ -2966,15 +2966,12 @@ width: 24rem;
     height: 300px; /* Set a specific height */
     display: block; /* Make the image a block element */
     margin: 0 auto; /* Center the image */
-    background-image: url('images/ear-infografic.png'); /* Default image */
-    background-size: cover; /* Cover the entire div */
-    background-position: center; /* Center the image */
-    background-repeat: no-repeat; /* Prevent the image from repeating */
+
 }
 
 @media (max-width: 600px) {
     .small-image {
-        background-image: url('images/nozel-mobile.png'); /* Substitute with the mobile image */
+     
     }
 }
 
