@@ -1370,6 +1370,13 @@ margin-top: 0%;
 
 
 @media (max-width: 600px) {
+
+.container-ear-infographic img{
+      max-width: 91%;
+    height: 25%;
+}
+
+    
 .main-text{
     text-align: center;
 }
