@@ -163,25 +163,25 @@ function showPopup(country) {
             videoUrl = 'https://www.youtube.com/embed/Kx0Whg-KOxg';
             title = 'בריטניה';
             flagSrc = 'images/Britain.png';
-            sentence = "זה בהחלט עובד, זה לגמרי שווה את זה"; // New sentence for UK
+            sentence = "\"זה בהחלט עובד, זה לגמרי שווה את זה\""; 
             break;
         case 'US':
             videoUrl = 'https://www.youtube.com/embed/_7OPmT3yJWY';
             title = 'אמריקה';
             flagSrc = 'images/amerika.png';
-            sentence = "זה מוצר מדהים ולגמרי עובד"; // New sentence for US
+           sentence = "\"זה מוצר מדהים ולגמרי עובד\"";
             break;
         case 'ND':
             videoUrl = 'https://www.youtube.com/embed/oyki6anJwR0';
             title = 'צפון דיקוטה';
             flagSrc = 'images/dikota.png';
-            sentence = "אני ממליצה להשתמש בזה, זה כלי נפלא"; // New sentence for ND
+             sentence = "\"אני ממליצה להשתמש בזה, זה כלי נפלא\"";
             break;
         case 'Hawaii':
             videoUrl = 'https://www.youtube.com/embed/1ZPIhMGBsaM';
             title = 'הוואי';
             flagSrc = 'images/hawaii.png';
-            sentence = "זה לא פולשני ומטפל בבעיה"; // New sentence for Hawaii
+       sentence = "\"זה לא פולשני ומטפל בבעיה\"";
             break;
         case 'Asia':
             videoUrl = 'https://www.youtube.com/embed/KpFTmjh-4qg';
