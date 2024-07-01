@@ -2961,7 +2961,7 @@ width: 24rem;
 }
 
 .small-image {
-width: 50%; /* Adjust the percentage to the desired size */
+width: 80%; /* Adjust the percentage to the desired size */
     max-width: 1000px; /* Optional: set a maximum width */
     height: auto; /* Maintain the aspect ratio */
     display: block; /* Make the image a block element */
